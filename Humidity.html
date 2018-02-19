@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- Landing page-->
+<!-- Humidity page-->
 <html lang="en">
 
 <head>
@@ -35,12 +35,11 @@
           <ul class="nav navbar-nav navbar-right">
             <li class="dropdown">
               <li class="active"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
-              <!--<li class="active"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="sr-only">(current)</span></a></li>-->
               <ul class="dropdown-menu">
                 <li><a href="Max_Temperature.html">Max Temperature</a></li>
                 <li><a href="Humidity.html">Humidity</a></li>
                 <li><a href="Cloudiness.html">Cloudiness</a></li>
-                <li><a href="Wind_Speed.html">Wind Speed</a></li> 
+                <li><a href="Wind_Speed.html">Wind Speed</a></li>
               </ul>
             </li>  
           <li><a href="Comparisons_page.html">Comparison</a></li>
@@ -55,36 +54,32 @@
 
      <!-- Creates the Overall Grid -->
   <div class="container">
-  <section>
+
     <!-- ROW 0 -->
     <div class="row">
         <div class="col-md-8">
-          <h1 class="text-left">Summary: Latitude vs. X</h1>   
-          </article>
-          <hr>
-          <article>
-              <img id="map" src="https://github.com/minas26902/HW6_API/blob/master/WeatherPy_v1_files/WeatherPy_v1_10_1.png?raw=true" alt="World map with dots on cities selected">
-              <p><strong>"What is the weather like as we approach the equator?" </strong> For this project I utilized Python libraries (requests, citipy, pandas, numpy, 
-                      matplotlib.pyplot, datetime), JSON traversals and the OpenWeatherMap API to collect and analyze weather data from over nine hundred randomly selected cities 
-                      worldwide (each point in the longitude vs. latitude scatterplot above represents the location of the cities analyzed). For all weather parameters analyzed 
-                      (temperature, wind, humidity, and wind speed) <strong>temperature</strong> was the most strongly correlated to latitude. This site contains source data as
-                       well as visualizations showing the correlation (or lack of correlation) between latitude and four different weather parameters.
-              </p>
+          <h1 class="text-left">Humidity</h1>   
+        </article>
+        <hr>
+        <article>
+          <img src="https://github.com/minas26902/HW6_API/blob/master/Humidity_vs_Latitude.png?raw=true" alt="Humidity vs Latitude scatterplot" width="85%">
+          <p>There appears to be no correlation between city proximity to the equator and percent humidity as the majority of cities fall within a 20 to 100% humidity 
+                range, independent of their latitude. The only exceptions were a few cities with a humidity of 0% present in latitudinal range of +60 to +70 degrees. 
+          </p>
         </div>
         <div class="col-md-4">
           <h2 class="text-left">Visualizations</h2>
-          </article>
-          <hr>
-          <article>
-              <div class="boxset">
-                  <img id= "viz1" src="https://github.com/minas26902/HW6_API/blob/master/Temperature_vs_Latitude.png?raw=true" alt="Temperature vs Latitude scatterplot">
-                  <img id= "viz2" src="https://github.com/minas26902/HW6_API/blob/master/Humidity_vs_Latitude.png?raw=true" alt="Humidity vs Latitude scatterplot">
-                  <img id= "viz3" src="https://github.com/minas26902/HW6_API/blob/master/Cloudiness_vs_Latitude.png?raw=true" alt="Cloudiness vs Latitude scatterplot">
-                  <img id= "viz4" src="https://github.com/minas26902/HW6_API/blob/master/WindSpeed_vs_Latitude.png?raw=true" alt="Windspeed vs Latitude scatterplot">
-                </div>
+        </article>
+        <hr>
+        <article>
+          <div class="boxset">
+            <img id= "viz1" src="https://github.com/minas26902/HW6_API/blob/master/Temperature_vs_Latitude.png?raw=true" alt="Temperature vs Latitude scatterplot">
+            <img id= "viz2h" src="https://github.com/minas26902/HW6_API/blob/master/Humidity_vs_Latitude.png?raw=true" alt="Humidity vs Latitude scatterplot">
+            <img id= "viz3" src="https://github.com/minas26902/HW6_API/blob/master/Cloudiness_vs_Latitude.png?raw=true" alt="Cloudiness vs Latitude scatterplot">
+            <img id= "viz4" src="https://github.com/minas26902/HW6_API/blob/master/WindSpeed_vs_Latitude.png?raw=true" alt="Windspeed vs Latitude scatterplot">
+          </div>
         </div>
     </div>
-  </section>
-</div>
+  </div>
 </body>
 </html>

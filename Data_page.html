@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<!-- Landing page-->
+<!-- Data page-->
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <title>Web Visualization Dashboard</title>
-  <link rel="stylesheet" href="reset.css">
+  <!--<link rel="stylesheet" href="reset.css">-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -35,7 +35,6 @@
           <ul class="nav navbar-nav navbar-right">
             <li class="dropdown">
               <li class="active"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
-              <!--<li class="active"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="sr-only">(current)</span></a></li>-->
               <ul class="dropdown-menu">
                 <li><a href="Max_Temperature.html">Max Temperature</a></li>
                 <li><a href="Humidity.html">Humidity</a></li>
@@ -54,37 +53,32 @@
     </nav>
 
      <!-- Creates the Overall Grid -->
-  <div class="container">
-  <section>
+    <div class="container">
+    <section>
     <!-- ROW 0 -->
     <div class="row">
-        <div class="col-md-8">
-          <h1 class="text-left">Summary: Latitude vs. X</h1>   
+        <div class="col-md-12">
+          <h1 class="text-left">Data</h1> 
           </article>
           <hr>
-          <article>
-              <img id="map" src="https://github.com/minas26902/HW6_API/blob/master/WeatherPy_v1_files/WeatherPy_v1_10_1.png?raw=true" alt="World map with dots on cities selected">
-              <p><strong>"What is the weather like as we approach the equator?" </strong> For this project I utilized Python libraries (requests, citipy, pandas, numpy, 
-                      matplotlib.pyplot, datetime), JSON traversals and the OpenWeatherMap API to collect and analyze weather data from over nine hundred randomly selected cities 
-                      worldwide (each point in the longitude vs. latitude scatterplot above represents the location of the cities analyzed). For all weather parameters analyzed 
-                      (temperature, wind, humidity, and wind speed) <strong>temperature</strong> was the most strongly correlated to latitude. This site contains source data as
-                       well as visualizations showing the correlation (or lack of correlation) between latitude and four different weather parameters.
-              </p>
-        </div>
-        <div class="col-md-4">
-          <h2 class="text-left">Visualizations</h2>
-          </article>
-          <hr>
-          <article>
-              <div class="boxset">
-                  <img id= "viz1" src="https://github.com/minas26902/HW6_API/blob/master/Temperature_vs_Latitude.png?raw=true" alt="Temperature vs Latitude scatterplot">
-                  <img id= "viz2" src="https://github.com/minas26902/HW6_API/blob/master/Humidity_vs_Latitude.png?raw=true" alt="Humidity vs Latitude scatterplot">
-                  <img id= "viz3" src="https://github.com/minas26902/HW6_API/blob/master/Cloudiness_vs_Latitude.png?raw=true" alt="Cloudiness vs Latitude scatterplot">
-                  <img id= "viz4" src="https://github.com/minas26902/HW6_API/blob/master/WindSpeed_vs_Latitude.png?raw=true" alt="Windspeed vs Latitude scatterplot">
-                </div>
+          <article>  
         </div>
     </div>
-  </section>
-</div>
-</body>
+    
+    <!-- Row 1 -->
+    <div class="row">
+      <div class="col-md-12">
+        <h4 class="text-left">The following table includes all of the data points used for plotting in this project.</h4>
+      </div> 
+     </div> 
+    <!-- Row 2 TABLE -->
+      <div class="table">
+        <table class= "table table-striped"> 
+          <iframe src = "cities_table5.html" height="550" width= "1100">
+          </iframe>
+        </table>    
+      </div>
+    </section>
+    </div>
+  </body>
 </html>
