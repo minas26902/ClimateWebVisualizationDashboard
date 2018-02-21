@@ -111,3 +111,35 @@ hr {
 h4 {
     margin-bottom: 30px;
 }
+
+@media (max-width:990px) {
+
+.boxset {
+    position:relative;
+    height: 100px;
+}
+
+#viz3c {
+    position:relative;
+    top:0px;
+    left:375px;
+ }
+
+#viz4w {
+    position:relative;
+    top:0px;
+    left:380px;
+ }
+
+#viz3 {
+    position:relative;
+    top:0px;
+    left:375px;
+ }
+
+#viz4{
+    position:relative;
+    top:0px;
+    left:380px;
+ }
+}
